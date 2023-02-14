@@ -3,7 +3,9 @@
     flex-direction: column;
     justify-content: center;
 }
-
+h1 {
+    text-align: center;
+}
 .top {
     display:flex;
     justify-content: center;

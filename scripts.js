@@ -18,6 +18,10 @@ function drawBoard(size = 16) {
                 pixel.style.backgroundColor = "black";
                 pixel.style.color = "black";
             });
+            pixel.addEventListener("TouchEvent", function(){
+                pixel.style.backgroundColor = "black";
+                pixel.style.color = "black";
+            })
             row1.appendChild(pixel);
         }
     }
