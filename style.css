@@ -1,8 +1,15 @@
+buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
 board {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .row1 {
     display: flex;

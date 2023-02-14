@@ -10,8 +10,8 @@ for (let i = 0; i < size; i ++) {
         const pixel = document.createElement("pixel");
         pixel.classList.add("pixel");
         pixel.textContent = "__";
-        pixel.style.color = "white";
-        pixel.style.backgroundColor = "white";
+        pixel.style.color = "grey";
+        pixel.style.backgroundColor = "grey";
         pixel.addEventListener("mouseover", function(){
             console.log("mouseover triggered at " + i + " " + j)
             pixel.style.backgroundColor = "black";
@@ -21,4 +21,19 @@ for (let i = 0; i < size; i ++) {
     }
 }
 
+const buttons = document.querySelectorAll("button")
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        if (button.id == "reset") {
+            const pixels = document.querySelectorAll("pixel")
+            pixels.forEach((pixel) => {
+                pixel.style.color = "grey";
+                pixel.style.backgroundColor = "grey";
+            });
+        }
+        else {
+            
+        }
+    })
+})
 
