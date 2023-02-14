@@ -11,7 +11,6 @@ function drawBoard(size = 16) {
         for (let j = 0; j < size; j++) {
             const pixel = document.createElement("pixel");
             pixel.classList.add("pixel");
-            pixel.textContent = "__";
             pixel.style.color = "grey";
             pixel.style.backgroundColor = "grey";
             pixel.addEventListener("mouseover", function(){

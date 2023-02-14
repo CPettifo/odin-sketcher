@@ -6,15 +6,21 @@ buttons {
 
 board {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width = 100px;
-    height = 100px;
-    flex = 1;
+    width: 1000px;
+    height:1000px;
+    
+    
 }
 
+pixel{
+    display:flex;
+    height: 10px;
+    width: 10px;
+}
 
-.row1 {
+row1 {
     display: flex;
     justify-content: center;
+    width: 1000px;
+    max-height: 10px;
 }
