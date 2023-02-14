@@ -8,6 +8,9 @@ board {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width = 100px;
+    height = 100px;
+    flex = 1;
 }
 
 
