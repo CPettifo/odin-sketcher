@@ -11,8 +11,8 @@ function drawBoard(size = 16) {
         for (let j = 0; j < size; j++) {
             const pixel = document.createElement("pixel");
             pixel.classList.add("pixel");
-            pixel.style.color = "grey";
-            pixel.style.backgroundColor = "grey";
+            pixel.style.color = "white";
+            pixel.style.backgroundColor = "white";
             pixel.addEventListener("mouseover", function(){
                 console.log("mouseover triggered at " + i + " " + j)
                 pixel.style.backgroundColor = "black";
@@ -28,8 +28,8 @@ buttons.forEach((button) => {
         if (button.id == "reset") {
             const pixels = document.querySelectorAll("pixel")
             pixels.forEach((pixel) => {
-                pixel.style.color = "grey";
-                pixel.style.backgroundColor = "grey";
+                pixel.style.color = "white";
+                pixel.style.backgroundColor = "white";
             });
         }
         else {
